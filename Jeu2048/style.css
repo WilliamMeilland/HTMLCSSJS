@@ -88,7 +88,12 @@ a.retry-button {
     border-radius: 3px;
     background: #8f7a66 url("reset.png") no-repeat center center;
     background-size: 35px 35px;
+}
 
+a.retry-button:hover {
+    background: rgba(143, 122, 102, 0.7) url("reset.png") no-repeat center center;
+    background-size: 35px 35px;
+    cursor: pointer;
 }
 
 .game-container {
@@ -98,6 +103,38 @@ a.retry-button {
     width: 450px;
     height: 450px;
     border-radius: 6px;
+}
+
+.game-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(238, 228, 218, 0.5);
+}
+
+.game-message #retry-button {
+    position: absolute;
+    top: 69%;
+    border: none;
+    background-color: #8f7a66;
+    color: white;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+.game-message p{
+    position: relative;
+    top: 5px;
+    font-size: 55px;
+    color: #776e65;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
 }
 
 .grid-container {
@@ -120,17 +157,49 @@ a.retry-button {
     border-radius: 3px;
     width: 94px;
     height: 94px;
-    font-size: 55px;
     font-weight: bold;
     background-color: rgb(238, 228, 218, 0.35);
+    color: #776e65;    
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.grid-cell-2 {
+.grid-cell.cell2 {
     background-color: #eee4da;
-    color: #776e65;
-    border-radius: 3px;
-    width: 94px;
-    height: 94px;
-    font-size: 55px;
-    font-weight: bold;
+}
+
+.grid-cell.cell4 {
+    background-color: #ede0c8;
+}
+
+.grid-cell.cell8 {
+    background-color: #f2b179;
+    color: #ffffff;
+}
+
+.grid-cell.cell16 {
+    background-color: #f59563;
+    color: #ffffff;
+}
+
+.grid-cell.cell32 {
+    background-color: #f67c5f;
+    color: #ffffff;
+}
+
+.grid-cell.cell64 {
+    background-color: #f65e3b;
+    color: #ffffff;
+}
+
+.grid-cell.cell128 , .grid-cell.cell256 ,.grid-cell.cell512, .grid-cell.cell1024, .grid-cell.cell2048 {
+    background-color: #edcf72;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.grid-cell.cell1024, .grid-cell.cell2048 {
+    font-size: 30px;
 }

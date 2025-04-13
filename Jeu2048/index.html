@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <html lang="en">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
+        
     </head>
     <body>
         <div class="container">
@@ -18,9 +18,13 @@
                 </div>
             </div>
             <div class="game-container">
+                <div class="game-message">
+                    <p>Jeu terminé!</p>
+                    <button id="retry-button">Recommencer</button>
+                </div>
                 <div class="grid-container">
                     <div class="grid-row">
-                        <div class="grid-cell-2">2</div>
+                        <div class="grid-cell"></div>
                         <div class="grid-cell"></div>
                         <div class="grid-cell"></div>
                         <div class="grid-cell"></div>
@@ -46,5 +50,6 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
